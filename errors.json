@@ -3,7 +3,7 @@
         "Code": "BADREQUEST",
         "Message": {
             "EN": "BAD REQUEST",
-            "TH": "BAD REQUEST"
+            "TH": "คำขอไม่ถูกต้อง"
         }
     },
     "401": {
@@ -17,21 +17,21 @@
         "Code": "NOTFOUND",
         "Message": {
             "EN": "api notfound",
-            "TH": "api notfound"
+            "TH": "ไม่พบ API"
         }
     },
     "500": {
         "Code": "INTERNAL_SERVER_ERROR",
         "Message": {
             "EN": "Internal Server Error",
-            "TH": "Internal Server Error"
+            "TH": "ข้อผิดพลาดภายในเซิร์ฟเวอร์"
         }
     },
     "503": {
         "Code": "SERVICE_UNAVAILABLE",
         "Message": {
             "EN": "Service Unavailable",
-            "TH": "Service Unavailable"
+            "TH": "ไม่สามารถให้บริการได้"
         }
     },
 
