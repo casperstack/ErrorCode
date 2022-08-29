@@ -559,8 +559,8 @@
     "40012": {
         "Code": "ERROR_VERIFY_CODE_EXPIRED",
         "Message": {
-            "EN": "Verify code expired",
-            "TH": "รหัสยืนยันหมดอายุ"
+            "EN": "Verify otp code expired",
+            "TH": "รหัสยืนยัน otp หมดอายุ"
         }
     },
     "40013": {
@@ -603,6 +603,13 @@
         "Message": {
             "EN": "Invalid sms verify code",
             "TH": "รหัสยืนยัน SMS ไม่ถูกต้อง"
+        }
+    },
+     "40019": {
+        "Code": "ERROR_VERIFY_EMAIL_CODE_EXPIRED",
+        "Message": {
+            "EN": "Verify email code expired",
+            "TH": "รหัสยืนยันอีเมลล์หมดอายุ"
         }
     },
     
