@@ -1,822 +1,870 @@
 {
-    "400": {
-        "Code": "BADREQUEST",
-        "Message": {
-            "EN": "BAD REQUEST",
-            "TH": "คำขอไม่ถูกต้อง"
-        }
-    },
-    "401": {
-        "Code": "UNAUTHORIZED",
-        "Message": {
-            "EN": "Unauthorized access",
-            "TH": "การเข้าถึงโดยไม่ได้รับอนุญาต"
-        }
-    },
-    "404": {
-        "Code": "NOTFOUND",
-        "Message": {
-            "EN": "api notfound",
-            "TH": "ไม่พบ API"
-        }
-    },
-    "500": {
-        "Code": "INTERNAL_SERVER_ERROR",
-        "Message": {
-            "EN": "Internal Server Error",
-            "TH": "ข้อผิดพลาดภายในเซิร์ฟเวอร์"
-        }
-    },
-    "503": {
-        "Code": "SERVICE_UNAVAILABLE",
-        "Message": {
-            "EN": "Service Unavailable",
-            "TH": "ไม่สามารถให้บริการได้"
-        }
-    },
-
-
-    "1000": {
-        "Code": "ERROR_INVALID_PARAMETER",
-        "Message": {
-            "EN": "Invalid request parameter",
-            "TH": "พารามิเตอร์ที่ร้องขอไม่ถูกต้อง"
-        }
-    },
-    "1001": {
-        "Code": "ERROR_VALIDATE_PARAMETER",
-        "Message": {
-            "EN": "Cannot validate request parameter",
-            "TH": "ไม่สามารถตรวจสอบพารามิเตอร์ที่ร้องขอได้"
-        }
-    },
-    "1002": {
-        "Code": "ERROR_CANNOT_UPDATE_USER_DATA",
-        "Message": {
-            "EN": "Cannot update user data",
-            "TH": "ไม่สามารถอัพเดทข้อมูลผู้ใช้ได้"
-        }
-    },
-    "1003": {
-        "Code": "ERROR_CANNOT_GENERATE_SESSION",
-        "Message": {
-            "EN": "Cannot generate session",
-            "TH": "ไม่สามารถสร้าง session ผู้ใช้ได้"
-        }
-    },
-    "1004": {
-        "Code": "ERROR_INVALID_GOOGLE_2FA",
-        "Message": {
-            "EN": "Invalid Google Authenticator code",
-            "TH": "รหัสยืนยันตัวตน Google Authenticator ไม่ถูกต้อง"
-        }
-    },
-    "1005": {
-        "Code": "ERROR_INVALID_EMAIL_VERIFY_CODE",
-        "Message": {
-            "EN": "Invalid email verify code",
-            "TH": "รหัสยืนยันอีเมล์ไม่ถูกต้อง"
-        }
-    },
-    "1006": {
-        "Code": "ERROR_VERIFY_EMAIL_CODE_FAILED",
-        "Message": {
-            "EN": "Cannot verify email code",
-            "TH": "ไม่สามาตรวจสอบรหัสยืนยันอีเมล์ได้"
-        }
-    },
-    "1007": {
-        "Code": "ERROR_INVALID_SMS_VERIFY_CODE",
-        "Message": {
-            "EN": "Invalid SMS verify code",
-            "TH": "รหัสยืนยัน SMS ไม่ถูกต้อง"
-        }
-    },
-    "1008": {
-        "Code": "ERROR_VERIFY_SMS_CODE_FAILED",
-        "Message": {
-            "EN": "Cannot verify SMS code",
-            "TH": "ไม่สามาตรวจสอบรหัสยืนยัน SMS ได้"
-        }
-    },
-    "1009": {
-        "Code": "ERROR_CANNOT_UPDATE_DEVICE_DATA",
-        "Message": {
-            "EN": "Cannot update device data",
-            "TH": "ไม่สามารถอัพเดทข้อมูลอุปกรณ์ได้"
-        }
-    },
-    "1010": {
-        "Code": "ERROR_CANNOT_UPDATE_VERIFY_DATA",
-        "Message": {
-            "EN": "Cannot update verify data",
-            "TH": "ไม่สามารถอัพเดทข้อมูลการยืนยันได้"
-        }
-    },
-    "1011": {
-        "Code": "ERROR_DEVICE_NOT_VERIFY",
-        "Message": {
-            "EN": "Current device not verify",
-            "TH": "อุปกรณ์ปัจจุบันยังไม่ได้ยืนยัน"
-        }
-    },
-    "1012": {
-        "Code": "ERROR_CREATE_ACTIVITY_LOG_FAILED",
-        "Message": {
-            "EN": "Cannot create activity log",
-            "TH": "ไม่สามารถบันทึกข้อมูลกิจกรรมได้"
-        }
-    },
-    "1013": {
-        "Code": "ERROR_DECODE_PASSWORD_FAILED",
-        "Message": {
-            "EN": "Cannot decode request password",
-            "TH": "ไม่สามารถแปลงข้อมูลรหัสผ่านได้"
-        }
-    },
-    "1014": {
-        "Code": "ERROR_DECODE_JSON_DATA",
-        "Message": {
-            "EN": "Cannot decode request JSON data",
-            "TH": "ไม่สามารถแปลงข้อมูล JSON ได้"
-        }
-    },
-    "1015": {
-        "Code": "PLEASE_VERIFY_2FA",
-        "Message": {
-            "EN": "Please verify 2FA",
-            "TH": "กรุณายืนยันตัวตนผ่าน 2FA"
-        }
-    },
-    "1016": {
-        "Code": "ERROR_CREATE_TEMPORARY_DATA_FAILED",
-        "Message": {
-            "EN": "Cannot create temporary data",
-            "TH": "ไม่สามารถสร้างข้อมูลชั่วคราวได้"
-        }
-    },
-    "1017": {
-        "Code": "ERROR_INVALID_OPERATION_TYPE",
-        "Message": {
-            "EN": "Invalid operation type",
-            "TH": "ประเภทการทำงานไม่ถูกต้อง"
-        }
-    },
-    "1018": {
-        "Code": "ERROR_DECODE_INT_DATA",
-        "Message": {
-            "EN": "Cannot decode request number data",
-            "TH": "ไม่สามารถแปลงข้อมูล ตัวเลข ได้"
-        }
-    },
-    "1019": {
-        "Code": "ERROR_GET_INTERNAL_ROUTE_FAILED",
-        "Message": {
-            "EN": "Cannot get internal router data",
-            "TH": "ไม่สามารถดึงข้อมูลเส้นทางการเชื่อมต่อภายในได้"
-        }
-    },
-    "1020": {
-        "Code": "ERROR_GET_CONFIG_FAILED",
-        "Message": {
-            "EN": "Cannot get config data",
-            "TH": "ไม่สามารถดึงข้อมูลการตั้งค่าได้"
-        }
-    },
-    "1021": {
-        "Code": "ERROR_INVALID_SERVICE_REQUEST",
-        "Message": {
-            "EN": "Cannot get service data",
-            "TH": "ไม่สามารถเข้าถึงข้อมูล service"
-        }
-    },
-    "1022": {
-        "Code": "ERROR_INVALID_SERVICE_METHOD",
-        "Message": {
-            "EN": "Cannot get service method",
-            "TH": "ไม่สามารถเข้าถึงข้อมูล method service"
-        }
-    },
-
-
-    "10001": {
-        "Code": "ERROR_AUTH_PARSE_TOKEN",
-        "Message": {
-            "EN": "Cannot parse user token",
-            "TH": "ไม่สามารถอ่านข้อมูลรหัสยืนยันการเข้าระบบผู้ใช้ได้"
-        }
-    },
-    "10002": {
-        "Code": "ERROR_AUTH_TOKEN_NOT_VALID",
-        "Message": {
-            "EN": "Token not valid",
-            "TH": "รหัสยืนยันการเข้าระบบไม่ถูกต้อง"
-        }
-    },
-
-
-
-    "10003": {
-        "Code": "ERROR_AUTH_NOT_FOUND_TOKEN_CUSTOMER",
-        "Message": {
-            "EN": "Cannot get customer data on user token",
-            "TH": "ไม่สามารถดึงข้อมูลลูกค้าจากรหัสยืนยันการเข้าระบบผู้ใช้ได้"
-        }
-    },
-    "10004": {
-        "Code": "ERROR_AUTH_NOT_FOUND_USER",
-        "Message": {
-            "EN": "User not found",
-            "TH": "ไม่พบข้อมูลผู้ใช้งาน"
-        }
-    },
-    "10005": {
-        "Code": "ERROR_AUTH_ACCOUNT_SUSPENDED",
-        "Message": {
-            "EN": "Account suspended",
-            "TH": "บัญชีถูกระงับการใช้งาน"
-        }
-    },
-    "10006": {
-        "Code": "ERROR_AUTH_INVALID_CLIENT_SIGNATURE",
-        "Message": {
-            "EN": "Invalid client signature",
-            "TH": "ข้อมูลลายเซ็นของผู้ใช้ไม่ถูกต้อง"
-        }
-    },
-    "10007": {
-        "Code": "ERROR_AUTH_VERIFY_CLIENT_SIGNATURE",
-        "Message": {
-            "EN": "Cannot verify client signature",
-            "TH": "ไม่สามารถยืนยันข้อมูลลายเซ็นของผู้ใช้ได้"
-        }
-    },
-    "10008": {
-        "Code": "ERROR_AUTH_GENERATE_TOKEN",
-        "Message": {
-            "EN": "Cannot generate user token",
-            "TH": "ไม่สามารถสร้างรหัสยืนยันการเข้าระบบผู้ใช้ได้"
-        }
-    },
-    "10009": {
-        "Code": "ERROR_AUTH_STORE_TOKEN",
-        "Message": {
-            "EN": "Cannot store user token",
-            "TH": "ไม่สามารถบันทึกรหัสยืนยันการเข้าระบบผู้ใช้ได้"
-        }
-    },
-    "10010": {
-        "Code": "ERROR_AUTH_INVALID_USERNAME_OR_PASSWORD",
-        "Message": {
-            "EN": "Invalid username or password",
-            "TH": "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง"
-        }
-    },
-    "10011": {
-        "Code": "ERROR_AUTH_TEMPORARY_BLOCKED",
-        "Message": {
-            "EN": "Authentication temporarily blocked",
-            "TH": "การเข้าระบบถูกระงับชั่วคราว"
-        }
-    },
-    "10012": {
-        "Code": "ERROR_AUTH_TEMPORARY_IP_BLOCKED",
-        "Message": {
-            "EN": "Authentication temporarily IP Adress blocked",
-            "TH": "ที่อยู่ไอพีถูกระงับชั่วคราว"
-        }
-    },
-    "10013": {
-        "Code": "ERROR_AUTH_DECODE_PARAMETER",
-        "Message": {
-            "EN": "Cannot decode parameter",
-            "TH": "ไม่สามารถถอดรหัสข้อมูลที่ส่งมา"
-        }
-    },
-    "10014": {
-        "Code": "ERROR_AUTH_GET_CLIENT_INFO",
-        "Message": {
-            "EN": "Cannot get client info",
-            "TH": "ไม่สามารถดึงข้อมูล อุปกรณ์ ของผู้ใช้ได้"
-        }
-    },
-    "10015": {
-        "Code": "ERROR_AUTH_QUERY_DEVICE_FAILED",
-        "Message": {
-            "EN": "Cannot query device data",
-            "TH": "ไม่สามารถดึงข้อมูลอุปกรณ์จากระบบได้"
-        }
-    },
-    "10016": {
-        "Code": "ERROR_AUTH_CREATE_NEW_DEVICE_FAILED",
-        "Message": {
-            "EN": "Cannot create new device",
-            "TH": "ไม่สามารถบันทึกข้อมูลอุปกรณ์ใหม่ได้"
-        }
-    },
-    "10017": {
-        "Code": "ERROR_AUTH_UPDATE_DEVICE_FAILED",
-        "Message": {
-            "EN": "Cannot update device data",
-            "TH": "ไม่สามารถอัพเดทข้อมูลอุปกรณ์ได้"
-        }
-    },
-    "10018": {
-        "Code": "ERROR_AUTH_INVALID_VERIFY_DEVICE_HASH",
-        "Message": {
-            "EN": "Invalid parameter verify device hash",
-            "TH": "ไม่สามารถยืนยันข้อมูล ID อุปกรณ์ได้"
-        }
-    },
-    "20001": {
-        "Code": "ERROR_USER_ALREADY_EXIST",
-        "Message": {
-            "EN": "User already exist",
-            "TH": "พบข้อมูลผู้ใช้นี้ในระบบแล้ว"
-        }
-    },
-
-
-
-    "20002": {
-        "Code": "ERROR_USER_REFERRER_ID_NOTFOUND",
-        "Message": {
-            "EN": "Referrer ID not found",
-            "TH": "ไม่พบข้อมูล Referrer ID"
-        }
-    },
-    "20003": {
-        "Code": "ERROR_USER_CREATE_NEW_USER_FAILED",
-        "Message": {
-            "EN": "Cannot create new user",
-            "TH": "ไม่สามารถบันทึกผู้ใช้ใหม่ได้"
-        }
-    },
-    "20004": {
-        "Code": "ERROR_USER_CREATE_NEW_USER_DATA_FAILED",
-        "Message": {
-            "EN": "Cannot create new user data",
-            "TH": "ไม่สามารถบันทึกข้อมูลผู้ใช้ใหม่ได้"
-        }
-    },
-    "20005": {
-        "Code": "ERROR_USER_NOT_FOUND_USER",
-        "Message": {
-            "EN": "User not found",
-            "TH": "ไม่พบข้อมูลผู้ใช้"
-        }
-    },
-    "20006": {
-        "Code": "ERROR_USER_NOT_FOUND_TRADER_USER",
-        "Message": {
-            "EN": "Trader user not found",
-            "TH": "ไม่พบข้อมูล trader user"
-        }
-    },
-    "20007": {
-        "Code": "ERROR_USER_QUERY_USER_DATA_FAILED",
-        "Message": {
-            "EN": "Cannot query user data",
-            "TH": "ไม่สามารถค้นหาข้อมูลผู้ใช้ได้"
-        }
-    },
-    "20008": {
-        "Code": "ERROR_USER_QUERY_USER_DEVICE_FAILED",
-        "Message": {
-            "EN": "Cannot query user device data",
-            "TH": "ไม่สามารถค้นหาข้อมูลอุปกรณ์ของผู้ใช้ได้"
-        }
-    },
-    "20009": {
-        "Code": "ERROR_USER_DEVICE_NOTFOUND",
-        "Message": {
-            "EN": "Device not found",
-            "TH": "ไม่พบข้อมูลอุปกรณ์"
-        }
-    },
-    "20010": {
-        "Code": "ERROR_USER_DEVICE_INVALID_OWNER",
-        "Message": {
-            "EN": "Invalid device owner",
-            "TH": "ข้อมูลผู้ใช้งานอุปกรณ์ไม่ถูกต้อง"
-        }
-    },
-    "20011": {
-        "Code": "ERROR_USER_QUERY_USER_ACTIVITY_FAILED",
-        "Message": {
-            "EN": "Cannot query user activity",
-            "TH": "ไม่สามารถค้นหาข้อมูลกิจกรรมของผู้ใช้ได้"
-        }
-    },
-    "20012": {
-        "Code": "ERROR_USER_QUERY_USER_TRADER_FAILED",
-        "Message": {
-            "EN": "Cannot query user trader account",
-            "TH": "ไม่สามารถค้นหาข้อมูลบัญชี การเทรด ของผู้ใช้ได้"
-        }
-    },
-    "20013": {
-        "Code": "ERROR_USER_INVALID_TRADDER_ID",
-        "Message": {
-            "EN": "Invalid tradder ID",
-            "TH": "ข้อมูลบัญชี การเทรด ไม่ถูกต้อง"
-        }
-    },
-    "20014": {
-        "Code": "ERROR_USER_NOTFOUND_TRADDER_ON_USER",
-        "Message": {
-            "EN": "Not found tradder on user",
-            "TH": "ไม่พบข้อมูลบัญชี การเทรด ของผู้ใช้"
-        }
-    },
-    "20015": {
-        "Code": "ERROR_USER_TRADDER_DISABLE",
-        "Message": {
-            "EN": "Trader account is disabled",
-            "TH": "บัญชีการเทรดถูกปิดการใช้งาน"
-        }
-    },
-    "20016": {
-        "Code": "ERROR_USER_QUERY_REFERRAL_FAILED",
-        "Message": {
-            "EN": "Cannot query user referral on account",
-            "TH": "ไม่สามารถค้นหาข้อมูลบัญชี แนะนำเพื่อน ของผู้ใช้ได้"
-        }
-    },
-
-
-
-
-    "30001": {
-        "Code": "ERROR_SECURITY_GOOGLE_AUTH_ALREADY_ENABLE",
-        "Message": {
-            "EN": "Google Authenticator Already Enable",
-            "TH": "รหัสยืนยันตัวตน Google ถูกเปิดใช้งานแล้ว"
-        }
-    },
-    "30002": {
-        "Code": "ERROR_SECURITY_GOOGLE_AUTH_GENERATE_FAILED",
-        "Message": {
-            "EN": "Cannot generate Google Authenticator code",
-            "TH": "ไม่สามารถสร้างรหัสยืนยันตัวตน Google ได้"
-        }
-    },
-    "30003": {
-        "Code": "ERROR_SECURITY_GOOGLE_AUTH_DECODE_FAILED",
-        "Message": {
-            "EN": "Cannot decode Google Authenticator code",
-            "TH": "ไม่สามารถถอดรหัสยืนยันตัวตน Google ได้"
-        }
-    },
-    "30004": {
-        "Code": "ERROR_SECURITY_GOOGLE_AUTH_ENCODE_FAILED",
-        "Message": {
-            "EN": "Cannot encode Google Authenticator code",
-            "TH": "ไม่สามารถเข้ารหัสยืนยันตัวตน Google ได้"
-        }
-    },
-    "30005": {
-        "Code": "ERROR_SECURITY_GOOGLE_AUTH_NOT_ENABLE",
-        "Message": {
-            "EN": "Google Authenticator not enable",
-            "TH": "ไม่ได้เปิดใช้งาน Google Authenticator"
-        }
-    },
-
-
-
-
-    "40001": {
-        "Code": "ERROR_VERIFY_CANNOT_GENERATE_CAPTCHA",
-        "Message": {
-            "EN": "Cannot generate captcha",
-            "TH": "ไม่สามารถสร้างรหัส Captcha ได้"
-        }
-    },
-    "40002": {
-        "Code": "ERROR_VERIFY_CANNOT_SAVE_CAPTCHA_SESSION",
-        "Message": {
-            "EN": "Cannot save captcha session",
-            "TH": "ไม่สามารถบันทึกรหัส Captcha ได้"
-        }
-    },
-    "40003": {
-        "Code": "ERROR_VERIFY_CANNOT_GET_SESSION",
-        "Message": {
-            "EN": "Cannot get user session",
-            "TH": "ไม่สามารถค้นหาข้อมูลการเข้าสู่ระบบได้"
-        }
-    },
-    "40005": {
-        "Code": "ERROR_VERIFY_SESSION_USER_NOT_MATCH",
-        "Message": {
-            "EN": "User session not match",
-            "TH": "ข้อมูลการเข้าสู่ระบบไม่ตรงกับข้อมูล session"
-        }
-    },
-    "40006": {
-        "Code": "ERROR_VERIFY_INVALID_BUSINESS_TYPE",
-        "Message": {
-            "EN": "Invalid business type",
-            "TH": "พารามิเตอร์ business ไม่ถูกต้อง"
-        }
-    },
-    "40007": {
-        "Code": "ERROR_VERIFY_GENERATE_VERIFY_CODE_FAILED",
-        "Message": {
-            "EN": "Cannot generate verify code",
-            "TH": "ไม่สามารถสร้างรหัสยืนยันได้"
-        }
-    },
-    "40008": {
-        "Code": "ERROR_VERIFY_REQUEST_PROVIDER_FAILED",
-        "Message": {
-            "EN": "Cannot connect to verify provider",
-            "TH": "ไม่สามารถเชื่อมต่อไปยังผู้ให้บริการยืนยันได้"
-        }
-    },
-    "40009": {
-        "Code": "ERROR_VERIFY_INVALID_VERIFY_CODE",
-        "Message": {
-            "EN": "Invalid verify code",
-            "TH": "รหัสยืนยันไม่ถูกต้อง"
-        }
-    },
-    "40010": {
-        "Code": "ERROR_VERIFY_CANNOT_CHECK_VERIFY_CODE",
-        "Message": {
-            "EN": "Cannot check verify code",
-            "TH": "ไม่สามารถตรวจสอบรหัสยืนยันได้"
-        }
-    },
-    "40011": {
-        "Code": "ERROR_VERIFY_ALREADY_USED",
-        "Message": {
-            "EN": "Verify code already used",
-            "TH": "รหัสยืนยันถูกใช้ไปแล้ว"
-        }
-    },
-    "40012": {
-        "Code": "ERROR_VERIFY_CODE_EXPIRED",
-        "Message": {
-            "EN": "Verify otp code expired",
-            "TH": "รหัสยืนยัน otp หมดอายุ"
-        }
-    },
-    "40013": {
-        "Code": "ERROR_VERIFY_SESSION_MOBILE_NUM_NOT_MATCH",
-        "Message": {
-            "EN": "Verify session mobile number not match",
-            "TH": "เบอร์โทรศัพท์ไม่ตรงกับข้อมูล session"
-        }
-    },
-    "40014": {
-        "Code": "ERROR_VERIFY_SESSION_EMAIL_NOT_MATCH",
-        "Message": {
-            "EN": "Verify session email not match",
-            "TH": "อีเมล์ไม่ตรงกับข้อมูล session"
-        }
-    },
-    "40015": {
-        "Code": "ERROR_VERIFY_SESSION_IDENTITY_NOT_MATCH",
-        "Message": {
-            "EN": "Verify session indentity not match",
-            "TH": "ข้อมูล การระบุตัวตน ไม่ตรงกับข้อมูล session"
-        }
-    },
-    "40016": {
-        "Code": "ERROR_VERIFY_INVALID_CAPTCHA",
-        "Message": {
-            "EN": "Invalid captcha",
-            "TH": "รหัสภาพ Captcha ไม่ถูกต้อง"
-        }
-    },
-    "40017": {
-        "Code": "ERROR_VERIFY_INVALID_VERIFY_EMAIL_CODE",
-        "Message": {
-            "EN": "Invalid email verify code",
-            "TH": "รหัสยืนยันอีเมลล์ไม่ถูกต้อง"
-        }
-    },
-    "40018": {
-        "Code": "ERROR_VERIFY_INVALID_VERIFY_SMS_CODE",
-        "Message": {
-            "EN": "Invalid sms verify code",
-            "TH": "รหัสยืนยัน SMS ไม่ถูกต้อง"
-        }
-    },
-     "40019": {
-        "Code": "ERROR_VERIFY_EMAIL_CODE_EXPIRED",
-        "Message": {
-            "EN": "Verify email code expired",
-            "TH": "รหัสยืนยันอีเมลล์หมดอายุ"
-        }
-    },
-    
-
-
-    "50001": {
-        "Code": "ERROR_ASSET_QUERY_FAILED",
-        "Message": {
-            "EN": "Cannot query asset",
-            "TH": "ไม่สามารถดึงข้อมูลสินทรัพย์ได้"
-        }
-    },
-    "50002": {
-        "Code": "ERROR_CURRENCY_QUERY_FAILED",
-        "Message": {
-            "EN": "Cannot query currency",
-            "TH": "ไม่สามารถดึงข้อมูลสกุลเงินได้"
-        }
-    },
-    "50003": {
-        "Code": "ERROR_CURRENCY_CREATE_FAILED",
-        "Message": {
-            "EN": "Cannot create currency",
-            "TH": "ไม่สามารถสร้างข้อมูลสกุลเงินได้"
-        }
-    },
-    "50004": {
-        "Code": "ERROR_FXRATE_LOAD_FAILED",
-        "Message": {
-            "EN": "Cannot load fx currency rate",
-            "TH": "ไม่สามารถดึงข้อมูลอัตราแลกเปลี่ยนสกุลเงินได้"
-        }
-    },
-    "50005": {
-        "Code": "ERROR_MARKER_LOAD_FAILED",
-        "Message": {
-            "EN": "Cannot load market data",
-            "TH": "ไม่สามารถดึงข้อมูลตลาดได้"
-        }
-    },
-    "50006": {
-        "Code": "ERROR_MARKER_INVALID",
-        "Message": {
-            "EN": "Invalid market parameter",
-            "TH": "ข้อมูล market ไม่ถูกต้อง"
-        }
-    },
-    "50007": {
-        "Code": "ERROR_ORDER_ID_INVALID",
-        "Message": {
-            "EN": "Invalid order id",
-            "TH": "ข้อมูล order id ไม่ถูกต้อง"
-        }
-    },
-
-
-
-
-    "60001": {
-        "Code": "MARKET_BALANCE_QUERY_FAILED",
-        "Message": {
-            "EN": "Cannot query balance",
-            "TH": "ไม่สามารถดึงข้อมูลยอดเงินได้"
-        }
-    },
-    "60002": {
-        "Code": "MARKET_LIST_FAILED",
-        "Message": {
-            "EN": "Cannot query market list",
-            "TH": "ไม่สามารถดึงข้อมูลรายการตลาดได้"
-        }
-    },
-    "60003": {
-        "Code": "MARKET_STATUS_FAILED",
-        "Message": {
-            "EN": "Cannot query market status",
-            "TH": "ไม่สามารถดึงข้อมูลสถานะตลาดได้"
-        }
-    },
-    "60004": {
-        "Code": "MARKET_KLINE_FAILED",
-        "Message": {
-            "EN": "Cannot query market chart data",
-            "TH": "ไม่สามารถดึงข้อมูลกราฟได้"
-        }
-    },
-    "60005": {
-        "Code": "MARKET_DEPTH_FAILED",
-        "Message": {
-            "EN": "Cannot query market depth chart data",
-            "TH": "ไม่สามารถดึงข้อมูลกราฟความลึกได้"
-        }
-    },
-    "60006": {
-        "Code": "MARKET_MINICHART_FAILED",
-        "Message": {
-            "EN": "Cannot query market mini chart data",
-            "TH": "ไม่สามารถดึงข้อมูลกราฟได้"
-        }
-    },
-    "60007": {
-        "Code": "MARKET_ORDERBOOK_FAILED",
-        "Message": {
-            "EN": "Cannot query market order book",
-            "TH": "ไม่สามารถดึงข้อมูล order book ได้"
-        }
-    },
-    "60008": {
-        "Code": "MARKET_ORDER_CREATE_PUTLIMIT_FAILED",
-        "Message": {
-            "EN": "Cannot create order",
-            "TH": "ไม่สามารถเปิด order ได้"
-        }
-    },
-    "60009": {
-        "Code": "MARKET_TRIGGER_CREATE_FAILED",
-        "Message": {
-            "EN": "Cannot create trigger order",
-            "TH": "ไม่สามารถเปิด trigger order ได้"
-        }
-    },
-    "60011": {
-        "Code": "MARKET_ORDER_CREATE_MARKET_FAILED",
-        "Message": {
-            "EN": "Cannot create order",
-            "TH": "ไม่สามารถเปิด order ได้"
-        }
-    },
-    "60012": {
-        "Code": "MARKET_ORDER_PENDING_FAILED",
-        "Message": {
-            "EN": "Cannot get pending order",
-            "TH": "ไม่สามารถดึงข้อมูล order ที่รอดำเนินการได้"
-        }
-    },
-    "60013": {
-        "Code": "MARKET_ORDER_HISTORY_FAILED",
-        "Message": {
-            "EN": "Cannot get order history",
-            "TH": "ไม่สามารถดึงข้อมูล order history"
-        }
-    },
-    "60014": {
-        "Code": "MARKET_TRIGGER_HISTORY_FAILED",
-        "Message": {
-            "EN": "Cannot get trigger order history",
-            "TH": "ไม่สามารถดึงข้อมูล trigger order history"
-        }
-    },
-    "60015": {
-        "Code": "MARKET_TRADE_HISTORY_FAILED",
-        "Message": {
-            "EN": "Cannot get trade history",
-            "TH": "ไม่สามารถดึงข้อมูล trade history"
-        }
-    },
-    "60016": {
-        "Code": "MARKET_ORDER_CANCEL_FAILED",
-        "Message": {
-            "EN": "Cannot cancel order",
-            "TH": "ไม่สามารถยกเลิก order ได้"
-        }
-    },
-    "60017": {
-        "Code": "MARKET_ORDER_DETAIL_FAILED",
-        "Message": {
-            "EN": "Cannot get order detail",
-            "TH": "ไม่สามารถดึงข้อมูล order detail"
-        }
-    },
-    "60018": {
-        "Code": "MARKET_TRADING_DATA_FAILED",
-        "Message": {
-            "EN": "Cannot get trading data",
-            "TH": "ไม่สามารถดึงข้อมูล trading data"
-        }
-    },
-
-
-    "70001": {
-        "Code": "ERROR_WALLET_CREATE_FAILED",
-        "Message": {
-          "EN": "Cannot create wallet",
-          "TH": "ไม่สามารถสร้าง wallet ได้"
-        }
-      },
-      "70002": {
-        "Code": "ERROR_WALLET_GENERATE_KEY_FAILED",
-        "Message": {
-          "EN": "Cannot generate wallet key",
-          "TH": "ไม่สามารถสร้าง wallet key ได้"
-        }
-      },
-      "70003": {
-        "Code": "ERROR_WALLET_GET_ADDRESS_DETAIL_FAILED",
-        "Message": {
-          "EN": "Cannot get address detail",
-          "TH": "ไม่สามารถหาข้อมูล address ได้"
-        }
-      },
-      "70004": {
-        "Code": "ERROR_WALLET_GET_ADDRESS_TX_FAILED",
-        "Message": {
-          "EN": "Cannot get address transaction",
-          "TH": "ไม่สามารถหาข้อมูล transaction ของ address ได้"
-        }
-      }
-
-
+  "10001": {
+    "Code": "ERROR_QR_HASH_ALREADY_EXIST",
+    "Message": {
+      "EN": "ERROR_QR_HASH_ALREADY_EXIST",
+      "TH": "ERROR_QR_HASH_ALREADY_EXIST"
+    }
+  },
+  "10002": {
+    "Code": "ERROR_FAILED_FROMFILE",
+    "Message": {
+      "EN": "ERROR_FAILED_FROMFILE",
+      "TH": "ERROR_FAILED_FROMFILE"
+    }
+  },
+  "10003": {
+    "Code": "ERROR_VERIFY_CANNOT_CHECK_VERIFY_CODE",
+    "Message": {
+      "EN": "Cannot check verify code",
+      "TH": "ไม่สามารถตรวจสอบรหัสยืนยันได้"
+    }
+  },
+  "10004": {
+    "Code": "ERROR_INVALID_EMAIL_VERIFY_CODE",
+    "Message": {
+      "EN": "Invalid email verify code",
+      "TH": "รหัสยืนยันอีเมล์ไม่ถูกต้อง"
+    }
+  },
+  "10005": {
+    "Code": "ERROR_SLIP_FILE_TYPE",
+    "Message": {
+      "EN": "ERROR_SLIP_FILE_TYPE",
+      "TH": "ERROR_SLIP_FILE_TYPE"
+    }
+  },
+  "10006": {
+    "Code": "ERROR_ADMIN_GET_USER",
+    "Message": {
+      "EN": "ERROR_ADMIN_GET_USER",
+      "TH": "ERROR_ADMIN_GET_USER"
+    }
+  },
+  "10007": {
+    "Code": "ERROR_GET_API_MANAGEMENT_RESTRICTION_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_API_MANAGEMENT_RESTRICTION_FAILED",
+      "TH": "ERROR_GET_API_MANAGEMENT_RESTRICTION_FAILED"
+    }
+  },
+  "10008": {
+    "Code": "NOTFOUND",
+    "Message": {
+      "EN": "api notfound",
+      "TH": "ไม่พบ API"
+    }
+  },
+  "10009": {
+    "Code": "ERROR_CREATE_API_MANAGEMENT_FAILED",
+    "Message": {
+      "EN": "ERROR_CREATE_API_MANAGEMENT_FAILED",
+      "TH": "ERROR_CREATE_API_MANAGEMENT_FAILED"
+    }
+  },
+  "10010": {
+    "Code": "ERROR_AUTH_PARSE_TOKEN",
+    "Message": {
+      "EN": "Cannot parse user token",
+      "TH": "ไม่สามารถอ่านข้อมูลรหัสยืนยันการเข้าระบบผู้ใช้ได้"
+    }
+  },
+  "10011": {
+    "Code": "ERROR_VALIDATED_ADMIN",
+    "Message": {
+      "EN": "ERROR_VALIDATED_ADMIN",
+      "TH": "ERROR_VALIDATED_ADMIN"
+    }
+  },
+  "10012": {
+    "Code": "ERROR_AUTH_NOT_FOUND_USER",
+    "Message": {
+      "EN": "User not found",
+      "TH": "ไม่พบข้อมูลผู้ใช้งาน"
+    }
+  },
+  "10013": {
+    "Code": "ERROR_CANNOT_REMOVE_QR_CODE",
+    "Message": {
+      "EN": "ERROR_CANNOT_REMOVE_QR_CODE",
+      "TH": "ERROR_CANNOT_REMOVE_QR_CODE"
+    }
+  },
+  "10014": {
+    "Code": "SERVICE_UNAVAILABLE",
+    "Message": {
+      "EN": "Service Unavailable",
+      "TH": "ไม่สามารถให้บริการได้"
+    }
+  },
+  "10015": {
+    "Code": "ERROR_AUTH_ACCOUNT_SUSPENDED",
+    "Message": {
+      "EN": "Account suspended",
+      "TH": "บัญชีถูกระงับการใช้งาน"
+    }
+  },
+  "10016": {
+    "Code": "ERROR_EMAIL_ALREADY_EXISTED",
+    "Message": {
+      "EN": "ERROR_EMAIL_ALREADY_EXISTED",
+      "TH": "ERROR_EMAIL_ALREADY_EXISTED"
+    }
+  },
+  "10017": {
+    "Code": "INTERNAL_SERVER_ERROR",
+    "Message": {
+      "EN": "Internal Server Error",
+      "TH": "ข้อผิดพลาดภายในเซิร์ฟเวอร์"
+    }
+  },
+  "10018": {
+    "Code": "ERROR_VALIDATE_ROLE_SUPERADMIN_FAILED",
+    "Message": {
+      "EN": "ERROR_VALIDATE_ROLE_SUPERADMIN_FAILED",
+      "TH": "ERROR_VALIDATE_ROLE_SUPERADMIN_FAILED"
+    }
+  },
+  "10019": {
+    "Code": "ERROR_INVALID_REQUIRED_PARAMS",
+    "Message": {
+      "EN": "ERROR_INVALID_REQUIRED_PARAMS",
+      "TH": "ERROR_INVALID_REQUIRED_PARAMS"
+    }
+  },
+  "10020": {
+    "Code": "ERROR_UPDATE_API_MANAGEMENT_FAILED",
+    "Message": {
+      "EN": "ERROR_UPDATE_API_MANAGEMENT_FAILED",
+      "TH": "ERROR_UPDATE_API_MANAGEMENT_FAILED"
+    }
+  },
+  "10021": {
+    "Code": "ERROR_CREATE_PAYMENT_OPTION_FAILED",
+    "Message": {
+      "EN": "ERROR_CREATE_PAYMENT_OPTION_FAILED",
+      "TH": "ERROR_CREATE_PAYMENT_OPTION_FAILED"
+    }
+  },
+  "10022": {
+    "Code": "ERROR_FAILED_VALIDATE_PARAMETER",
+    "Message": {
+      "EN": "ERROR_FAILED_VALIDATE_PARAMETER",
+      "TH": "ERROR_FAILED_VALIDATE_PARAMETER"
+    }
+  },
+  "10023": {
+    "Code": "ERROR_AUTH_CLIENT_INFO_NOT_MATCH",
+    "Message": {
+      "EN": "ERROR_AUTH_CLIENT_INFO_NOT_MATCH",
+      "TH": "ERROR_AUTH_CLIENT_INFO_NOT_MATCH"
+    }
+  },
+  "10024": {
+    "Code": "ERROR_REMOVE_API_MANAGEMENT_FAILED",
+    "Message": {
+      "EN": "ERROR_REMOVE_API_MANAGEMENT_FAILED",
+      "TH": "ERROR_REMOVE_API_MANAGEMENT_FAILED"
+    }
+  },
+  "10025": {
+    "Code": "ERROR_UPDATE_API_MANAGEMENT_RESTRICTION_FAILED",
+    "Message": {
+      "EN": "ERROR_UPDATE_API_MANAGEMENT_RESTRICTION_FAILED",
+      "TH": "ERROR_UPDATE_API_MANAGEMENT_RESTRICTION_FAILED"
+    }
+  },
+  "10026": {
+    "Code": "ERR_VALIDATE_MAXIMUM_GENERATE_NUMBER_OF_KEY_FAILED",
+    "Message": {
+      "EN": "ERR_VALIDATE_MAXIMUM_GENERATE_NUMBER_OF_KEY_FAILED",
+      "TH": "ERR_VALIDATE_MAXIMUM_GENERATE_NUMBER_OF_KEY_FAILED"
+    }
+  },
+  "10027": {
+    "Code": "ERROR_DELETE_PAYMENT_OPTION_FAILED",
+    "Message": {
+      "EN": "ERROR_DELETE_PAYMENT_OPTION_FAILED",
+      "TH": "ERROR_DELETE_PAYMENT_OPTION_FAILED"
+    }
+  },
+  "10028": {
+    "Code": "ERROR_AUTH_DECODE_PARAMETER",
+    "Message": {
+      "EN": "Cannot decode parameter",
+      "TH": "ไม่สามารถถอดรหัสข้อมูลที่ส่งมา"
+    }
+  },
+  "10029": {
+    "Code": "ERROR_CANNOT_GENERATE_SESSION",
+    "Message": {
+      "EN": "Cannot generate session",
+      "TH": "ไม่สามารถสร้าง session ผู้ใช้ได้"
+    }
+  },
+  "10030": {
+    "Code": "ERROR_AUTH_NOT_FOUND_TOKEN_DEVICE_SIGNATURE",
+    "Message": {
+      "EN": "ERROR_AUTH_NOT_FOUND_TOKEN_DEVICE_SIGNATURE",
+      "TH": "ERROR_AUTH_NOT_FOUND_TOKEN_DEVICE_SIGNATURE"
+    }
+  },
+  "10031": {
+    "Code": "ERROR_CANNOT_UPDATE_VERIFY_DATA",
+    "Message": {
+      "EN": "Cannot update verify data",
+      "TH": "ไม่สามารถอัพเดทข้อมูลการยืนยันได้"
+    }
+  },
+  "10032": {
+    "Code": "ERROR_UPDATE_SETTING_SNAPSHOT_FAILED",
+    "Message": {
+      "EN": "ERROR_UPDATE_SETTING_SNAPSHOT_FAILED",
+      "TH": "ERROR_UPDATE_SETTING_SNAPSHOT_FAILED"
+    }
+  },
+  "10033": {
+    "Code": "ERROR_SECURITY_GOOGLE_AUTH_ENCODE_FAILED",
+    "Message": {
+      "EN": "Cannot encode Google Authenticator code",
+      "TH": "ไม่สามารถเข้ารหัสยืนยันตัวตน Google ได้"
+    }
+  },
+  "10034": {
+    "Code": "ERROR_CANNOT_FOUND_PROVIDER_API_KEY_OR_USER_ID",
+    "Message": {
+      "EN": "ERROR_CANNOT_FOUND_PROVIDER_API_KEY_OR_USER_ID",
+      "TH": "ERROR_CANNOT_FOUND_PROVIDER_API_KEY_OR_USER_ID"
+    }
+  },
+  "10035": {
+    "Code": "ERROR_CANNOT_GET_ADMIN_ID",
+    "Message": {
+      "EN": "ERROR_CANNOT_GET_ADMIN_ID",
+      "TH": "ERROR_CANNOT_GET_ADMIN_ID"
+    }
+  },
+  "10036": {
+    "Code": "ERROR_GET_MAX_CODE_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_MAX_CODE_FAILED",
+      "TH": "ERROR_GET_MAX_CODE_FAILED"
+    }
+  },
+  "10037": {
+    "Code": "ERROR_GET_CREDIT_BY_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_CREDIT_BY_FAILED",
+      "TH": "ERROR_GET_CREDIT_BY_FAILED"
+    }
+  },
+  "10038": {
+    "Code": "ERROR_ADD_BANK_ACCOUNT",
+    "Message": {
+      "EN": "ERROR_ADD_BANK_ACCOUNT",
+      "TH": "ERROR_ADD_BANK_ACCOUNT"
+    }
+  },
+  "10039": {
+    "Code": "ERROR_NO_PROVIDER_ID",
+    "Message": {
+      "EN": "ERROR_NO_PROVIDER_ID",
+      "TH": "ERROR_NO_PROVIDER_ID"
+    }
+  },
+  "10040": {
+    "Code": "ERROR_GET_LAST_ACTIVITY",
+    "Message": {
+      "EN": "ERROR_GET_LAST_ACTIVITY",
+      "TH": "ERROR_GET_LAST_ACTIVITY"
+    }
+  },
+  "10041": {
+    "Code": "ERROR_INVALID_USER_CLAIMS_DATA",
+    "Message": {
+      "EN": "ERROR_INVALID_USER_CLAIMS_DATA",
+      "TH": "ERROR_INVALID_USER_CLAIMS_DATA"
+    }
+  },
+  "10042": {
+    "Code": "ERROR_AUTH_TOKEN_NOT_VALID",
+    "Message": {
+      "EN": "Token not valid",
+      "TH": "รหัสยืนยันการเข้าระบบไม่ถูกต้อง"
+    }
+  },
+  "10043": {
+    "Code": "ERROR_VALIDATE_PREAUTH_FAILED",
+    "Message": {
+      "EN": "ERROR_VALIDATE_PREAUTH_FAILED",
+      "TH": "ERROR_VALIDATE_PREAUTH_FAILED"
+    }
+  },
+  "10044": {
+    "Code": "ERROR_USER_QUERY_USER_DATA_FAILED",
+    "Message": {
+      "EN": "Cannot query user data",
+      "TH": "ไม่สามารถค้นหาข้อมูลผู้ใช้ได้"
+    }
+  },
+  "10045": {
+    "Code": "ERROR_AUTH_GET_CLIENT_INFO",
+    "Message": {
+      "EN": "Cannot get client info",
+      "TH": "ไม่สามารถดึงข้อมูล อุปกรณ์ ของผู้ใช้ได้"
+    }
+  },
+  "10046": {
+    "Code": "ERROR_KEY_LIMIT_EXCEED",
+    "Message": {
+      "EN": "ERROR_KEY_LIMIT_EXCEED",
+      "TH": "ERROR_KEY_LIMIT_EXCEED"
+    }
+  },
+  "10047": {
+    "Code": "ERROR_CANNOT_UPLOAD_FILE_IMAGE",
+    "Message": {
+      "EN": "ERROR_CANNOT_UPLOAD_FILE_IMAGE",
+      "TH": "ERROR_CANNOT_UPLOAD_FILE_IMAGE"
+    }
+  },
+  "10048": {
+    "Code": "ERROR_CANNOTE_GET_USER",
+    "Message": {
+      "EN": "ERROR_CANNOTE_GET_USER",
+      "TH": "ERROR_CANNOTE_GET_USER"
+    }
+  },
+  "10049": {
+    "Code": "ERROR_OTP_TEMPORARY_BLOCKED",
+    "Message": {
+      "EN": "ERROR_OTP_TEMPORARY_BLOCKED",
+      "TH": "ERROR_OTP_TEMPORARY_BLOCKED"
+    }
+  },
+  "10050": {
+    "Code": "ERROR_UPDATE_USER_FAILED",
+    "Message": {
+      "EN": "ERROR_UPDATE_USER_FAILED",
+      "TH": "ERROR_UPDATE_USER_FAILED"
+    }
+  },
+  "10051": {
+    "Code": "ERROR_INVALID_SERVICE_METHOD",
+    "Message": {
+      "EN": "Cannot get service method",
+      "TH": "ไม่สามารถเข้าถึงข้อมูล method service"
+    }
+  },
+  "10052": {
+    "Code": "ERROR_CANNOT_FOUND_USER_ID",
+    "Message": {
+      "EN": "ERROR_CANNOT_FOUND_USER_ID",
+      "TH": "ERROR_CANNOT_FOUND_USER_ID"
+    }
+  },
+  "10053": {
+    "Code": "ERROR_GET_API_MANAGEMENT_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_API_MANAGEMENT_FAILED",
+      "TH": "ERROR_GET_API_MANAGEMENT_FAILED"
+    }
+  },
+  "10054": {
+    "Code": "ERROR_GET_CREDIT_TRANSACTION_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_CREDIT_TRANSACTION_FAILED",
+      "TH": "ERROR_GET_CREDIT_TRANSACTION_FAILED"
+    }
+  },
+  "10055": {
+    "Code": "ERROR_MIDDLEWARE_VALIDATED_ADMIN",
+    "Message": {
+      "EN": "ERROR_MIDDLEWARE_VALIDATED_ADMIN",
+      "TH": "ERROR_MIDDLEWARE_VALIDATED_ADMIN"
+    }
+  },
+  "10056": {
+    "Code": "ERROR_CANNOT_REMOVE_QR_CODE_HISTORY",
+    "Message": {
+      "EN": "ERROR_CANNOT_REMOVE_QR_CODE_HISTORY",
+      "TH": "ERROR_CANNOT_REMOVE_QR_CODE_HISTORY"
+    }
+  },
+  "10057": {
+    "Code": "ERROR_DELETE_API_MANAGEMENT_FAILED",
+    "Message": {
+      "EN": "ERROR_DELETE_API_MANAGEMENT_FAILED",
+      "TH": "ERROR_DELETE_API_MANAGEMENT_FAILED"
+    }
+  },
+  "10058": {
+    "Code": "ERROR_VERIFY_REQUEST_PROVIDER_FAILED",
+    "Message": {
+      "EN": "Cannot connect to verify provider",
+      "TH": "ไม่สามารถเชื่อมต่อไปยังผู้ให้บริการยืนยันได้"
+    }
+  },
+  "10059": {
+    "Code": "ERROR_DECODE_PASSWORD_FAILED",
+    "Message": {
+      "EN": "Cannot decode request password",
+      "TH": "ไม่สามารถแปลงข้อมูลรหัสผ่านได้"
+    }
+  },
+  "10060": {
+    "Code": "ERROR_BANK_ACCOUNT_DOSE_NOT_EXIST",
+    "Message": {
+      "EN": "ERROR_BANK_ACCOUNT_DOSE_NOT_EXIST",
+      "TH": "ERROR_BANK_ACCOUNT_DOSE_NOT_EXIST"
+    }
+  },
+  "10061": {
+    "Code": "ERROR_DELETE_DATA_FAILED",
+    "Message": {
+      "EN": "ERROR_DELETE_DATA_FAILED",
+      "TH": "ERROR_DELETE_DATA_FAILED"
+    }
+  },
+  "10062": {
+    "Code": "ERROR_USER_QUERY_SLIPTX_HISTORY_FAILED",
+    "Message": {
+      "EN": "ERROR_USER_QUERY_SLIPTX_HISTORY_FAILED",
+      "TH": "ERROR_USER_QUERY_SLIPTX_HISTORY_FAILED"
+    }
+  },
+  "10063": {
+    "Code": "ERROR_YOU_ARE_NOT_USER",
+    "Message": {
+      "EN": "ERROR_YOU_ARE_NOT_USER",
+      "TH": "ERROR_YOU_ARE_NOT_USER"
+    }
+  },
+  "10064": {
+    "Code": "ERROR_USER_NOT_FOUND_USER",
+    "Message": {
+      "EN": "User not found",
+      "TH": "ไม่พบข้อมูลผู้ใช้"
+    }
+  },
+  "10065": {
+    "Code": "ERROR_CREATE_SETTING_SNAPSHOT_FAILED",
+    "Message": {
+      "EN": "ERROR_CREATE_SETTING_SNAPSHOT_FAILED",
+      "TH": "ERROR_CREATE_SETTING_SNAPSHOT_FAILED"
+    }
+  },
+  "10066": {
+    "Code": "ERROR_AUTH_NOT_FOUND_TOKEN_CUSTOMER",
+    "Message": {
+      "EN": "Cannot get customer data on user token",
+      "TH": "ไม่สามารถดึงข้อมูลลูกค้าจากรหัสยืนยันการเข้าระบบผู้ใช้ได้"
+    }
+  },
+  "10067": {
+    "Code": "ERROR_USER_REFERRER_ID_NOTFOUND",
+    "Message": {
+      "EN": "Referrer ID not found",
+      "TH": "ไม่พบข้อมูล Referrer ID"
+    }
+  },
+  "10068": {
+    "Code": "ERROR_CANNOT_CREATE_QR_CODE",
+    "Message": {
+      "EN": "ERROR_CANNOT_CREATE_QR_CODE",
+      "TH": "ERROR_CANNOT_CREATE_QR_CODE"
+    }
+  },
+  "10069": {
+    "Code": "ERROR_OLD_QR_CODE_IS_NOT_PENDING",
+    "Message": {
+      "EN": "ERROR_OLD_QR_CODE_IS_NOT_PENDING",
+      "TH": "ERROR_OLD_QR_CODE_IS_NOT_PENDING"
+    }
+  },
+  "10070": {
+    "Code": "ERROR_AUTH_INVALID_USERNAME_OR_PASSWORD",
+    "Message": {
+      "EN": "Invalid username or password",
+      "TH": "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง"
+    }
+  },
+  "10071": {
+    "Code": "ERROR_VERIFY_INVALID_CAPTCHA",
+    "Message": {
+      "EN": "Invalid captcha",
+      "TH": "รหัสภาพ Captcha ไม่ถูกต้อง"
+    }
+  },
+  "10072": {
+    "Code": "ERROR_CREATE_ADMIN_ACCOUNT",
+    "Message": {
+      "EN": "ERROR_CREATE_ADMIN_ACCOUNT",
+      "TH": "ERROR_CREATE_ADMIN_ACCOUNT"
+    }
+  },
+  "10073": {
+    "Code": "ERROR_INVALID_RESTRICTION_CODE_FORMAT_TYPE",
+    "Message": {
+      "EN": "ERROR_INVALID_RESTRICTION_CODE_FORMAT_TYPE",
+      "TH": "ERROR_INVALID_RESTRICTION_CODE_FORMAT_TYPE"
+    }
+  },
+  "10074": {
+    "Code": "ERROR_REFRESH_TOKEN_NOTFOUND",
+    "Message": {
+      "EN": "ERROR_REFRESH_TOKEN_NOTFOUND",
+      "TH": "ERROR_REFRESH_TOKEN_NOTFOUND"
+    }
+  },
+  "10075": {
+    "Code": "ERROR_VERIFY_SESSION_USER_NOT_MATCH",
+    "Message": {
+      "EN": "User session not match",
+      "TH": "ข้อมูลการเข้าสู่ระบบไม่ตรงกับข้อมูล session"
+    }
+  },
+  "10076": {
+    "Code": "ERROR_UPDATE_USER_ACTIVITY",
+    "Message": {
+      "EN": "ERROR_UPDATE_USER_ACTIVITY",
+      "TH": "ERROR_UPDATE_USER_ACTIVITY"
+    }
+  },
+  "10077": {
+    "Code": "ERROR_SECURITY_GOOGLE_AUTH_DECODE_FAILED",
+    "Message": {
+      "EN": "Cannot decode Google Authenticator code",
+      "TH": "ไม่สามารถถอดรหัสยืนยันตัวตน Google ได้"
+    }
+  },
+  "10078": {
+    "Code": "ERROR_CANNOT_QUERY_QR_CODE",
+    "Message": {
+      "EN": "ERROR_CANNOT_QUERY_QR_CODE",
+      "TH": "ERROR_CANNOT_QUERY_QR_CODE"
+    }
+  },
+  "10079": {
+    "Code": "ERROR_UPDATE_VERIFYKEY_USER",
+    "Message": {
+      "EN": "ERROR_UPDATE_VERIFYKEY_USER",
+      "TH": "ERROR_UPDATE_VERIFYKEY_USER"
+    }
+  },
+  "10080": {
+    "Code": "ERROR_CREATE_API_MANAGEMENT_RESTRICTION_FAILED",
+    "Message": {
+      "EN": "ERROR_CREATE_API_MANAGEMENT_RESTRICTION_FAILED",
+      "TH": "ERROR_CREATE_API_MANAGEMENT_RESTRICTION_FAILED"
+    }
+  },
+  "10081": {
+    "Code": "ERROR_SIGN_KEY_FAILED",
+    "Message": {
+      "EN": "ERROR_SIGN_KEY_FAILED",
+      "TH": "ERROR_SIGN_KEY_FAILED"
+    }
+  },
+  "10082": {
+    "Code": "ERROR_GET_PAYMENT_OPTION_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_PAYMENT_OPTION_FAILED",
+      "TH": "ERROR_GET_PAYMENT_OPTION_FAILED"
+    }
+  },
+  "10083": {
+    "Code": "ERROR_RANDOM_PASSWORD_FAILED",
+    "Message": {
+      "EN": "ERROR_RANDOM_PASSWORD_FAILED",
+      "TH": "ERROR_RANDOM_PASSWORD_FAILED"
+    }
+  },
+  "10084": {
+    "Code": "ERROR_VALIDATE_PARAMETER",
+    "Message": {
+      "EN": "Cannot validate request parameter",
+      "TH": "ไม่สามารถตรวจสอบพารามิเตอร์ที่ร้องขอได้"
+    }
+  },
+  "10085": {
+    "Code": "ERROR_CANNOT_FOUND_USER",
+    "Message": {
+      "EN": "ERROR_CANNOT_FOUND_USER",
+      "TH": "ERROR_CANNOT_FOUND_USER"
+    }
+  },
+  "10086": {
+    "Code": "ERROR_AUTH_GENERATE_TOKEN",
+    "Message": {
+      "EN": "Cannot generate user token",
+      "TH": "ไม่สามารถสร้างรหัสยืนยันการเข้าระบบผู้ใช้ได้"
+    }
+  },
+  "10087": {
+    "Code": "ERROR_AUTH_STORE_TOKEN",
+    "Message": {
+      "EN": "Cannot store user token",
+      "TH": "ไม่สามารถบันทึกรหัสยืนยันการเข้าระบบผู้ใช้ได้"
+    }
+  },
+  "10088": {
+    "Code": "ERROR_CANNOT_UPDATE_USER_DATA",
+    "Message": {
+      "EN": "Cannot update user data",
+      "TH": "ไม่สามารถอัพเดทข้อมูลผู้ใช้ได้"
+    }
+  },
+  "10089": {
+    "Code": "ERROR_BANK_ACCOUNT_ALREADY_EXIST",
+    "Message": {
+      "EN": "ERROR_BANK_ACCOUNT_ALREADY_EXIST",
+      "TH": "ERROR_BANK_ACCOUNT_ALREADY_EXIST"
+    }
+  },
+  "10090": {
+    "Code": "ERROR_INVALID_BANK_NUMBER",
+    "Message": {
+      "EN": "ERROR_INVALID_BANK_NUMBER",
+      "TH": "ERROR_INVALID_BANK_NUMBER"
+    }
+  },
+  "10091": {
+    "Code": "ERROR_CANNOT_CREATE_QR_CODE_HISTORY",
+    "Message": {
+      "EN": "ERROR_CANNOT_CREATE_QR_CODE_HISTORY",
+      "TH": "ERROR_CANNOT_CREATE_QR_CODE_HISTORY"
+    }
+  },
+  "10092": {
+    "Code": "ERROR_VERIFY_CANNOT_GET_SESSION",
+    "Message": {
+      "EN": "Cannot get user session",
+      "TH": "ไม่สามารถค้นหาข้อมูลการเข้าสู่ระบบได้"
+    }
+  },
+  "10093": {
+    "Code": "ERROR_VALIDATE_ROLE_SUPERADMIN_FIALED",
+    "Message": {
+      "EN": "ERROR_VALIDATE_ROLE_SUPERADMIN_FIALED",
+      "TH": "ERROR_VALIDATE_ROLE_SUPERADMIN_FIALED"
+    }
+  },
+  "10094": {
+    "Code": "BADREQUEST",
+    "Message": {
+      "EN": "BAD REQUEST",
+      "TH": "คำขอไม่ถูกต้อง"
+    }
+  },
+  "10095": {
+    "Code": "ERROR_INVALID_REQUEST_PARAMETERS",
+    "Message": {
+      "EN": "ERROR_INVALID_REQUEST_PARAMETERS",
+      "TH": "ERROR_INVALID_REQUEST_PARAMETERS"
+    }
+  },
+  "10096": {
+    "Code": "ERROR_USER_QUERY_QR_CODE_HISTORY_FAILED",
+    "Message": {
+      "EN": "ERROR_USER_QUERY_QR_CODE_HISTORY_FAILED",
+      "TH": "ERROR_USER_QUERY_QR_CODE_HISTORY_FAILED"
+    }
+  },
+  "10097": {
+    "Code": "ERROR_CANNOT_CREATE_SLIP_TX",
+    "Message": {
+      "EN": "ERROR_CANNOT_CREATE_SLIP_TX",
+      "TH": "ERROR_CANNOT_CREATE_SLIP_TX"
+    }
+  },
+  "10098": {
+    "Code": "ERROR_CANNOT_FOUND_PENDING_QR_CODE",
+    "Message": {
+      "EN": "ERROR_CANNOT_FOUND_PENDING_QR_CODE",
+      "TH": "ERROR_CANNOT_FOUND_PENDING_QR_CODE"
+    }
+  },
+  "10099": {
+    "Code": "ERROR_CLAIMED_CTX_ID_FAILED",
+    "Message": {
+      "EN": "ERROR_CLAIMED_CTX_ID_FAILED",
+      "TH": "ERROR_CLAIMED_CTX_ID_FAILED"
+    }
+  },
+  "10100": {
+    "Code": "ERROR_USER_CREATE_NEW_USER_FAILED",
+    "Message": {
+      "EN": "Cannot create new user",
+      "TH": "ไม่สามารถบันทึกผู้ใช้ใหม่ได้"
+    }
+  },
+  "10101": {
+    "Code": "ERROR_VALIDATE_AUTHORIZATION_FAILED",
+    "Message": {
+      "EN": "ERROR_VALIDATE_AUTHORIZATION_FAILED",
+      "TH": "ERROR_VALIDATE_AUTHORIZATION_FAILED"
+    }
+  },
+  "10102": {
+    "Code": "ERROR_UPDATE_PAYMENT_OPTION_FAILED",
+    "Message": {
+      "EN": "ERROR_UPDATE_PAYMENT_OPTION_FAILED",
+      "TH": "ERROR_UPDATE_PAYMENT_OPTION_FAILED"
+    }
+  },
+  "10103": {
+    "Code": "ERROR_GENERATE_QR_CODE_FAILED",
+    "Message": {
+      "EN": "ERROR_GENERATE_QR_CODE_FAILED",
+      "TH": "ERROR_GENERATE_QR_CODE_FAILED"
+    }
+  },
+  "10104": {
+    "Code": "ERROR_IMG_HASH_ALREADY_EXIST",
+    "Message": {
+      "EN": "ERROR_IMG_HASH_ALREADY_EXIST",
+      "TH": "ERROR_IMG_HASH_ALREADY_EXIST"
+    }
+  },
+  "10105": {
+    "Code": "ERROR_INVALID_QR_HASH",
+    "Message": {
+      "EN": "ERROR_INVALID_QR_HASH",
+      "TH": "ERROR_INVALID_QR_HASH"
+    }
+  },
+  "10106": {
+    "Code": "ERROR_CANNOT_CREATE_SLIP_TX_HISTORY",
+    "Message": {
+      "EN": "ERROR_CANNOT_CREATE_SLIP_TX_HISTORY",
+      "TH": "ERROR_CANNOT_CREATE_SLIP_TX_HISTORY"
+    }
+  },
+  "10107": {
+    "Code": "ERROR_VERIFY_INVALID_VERIFY_EMAIL_CODE",
+    "Message": {
+      "EN": "Invalid email verify code",
+      "TH": "รหัสยืนยันอีเมลล์ไม่ถูกต้อง"
+    }
+  },
+  "10108": {
+    "Code": "ERROR_VERIFY_KEY_FAILED",
+    "Message": {
+      "EN": "ERROR_VERIFY_KEY_FAILED",
+      "TH": "ERROR_VERIFY_KEY_FAILED"
+    }
+  },
+  "10109": {
+    "Code": "ERROR_REFRESH_TOKEN_NOT_SAVE",
+    "Message": {
+      "EN": "ERROR_REFRESH_TOKEN_NOT_SAVE",
+      "TH": "ERROR_REFRESH_TOKEN_NOT_SAVE"
+    }
+  },
+  "10110": {
+    "Code": "ERROR_INVALID_GOOGLE_2FA",
+    "Message": {
+      "EN": "Invalid Google Authenticator code",
+      "TH": "รหัสยืนยันตัวตน Google Authenticator ไม่ถูกต้อง"
+    }
+  },
+  "10111": {
+    "Code": "ERROR_INVALID_SERVICE_REQUEST",
+    "Message": {
+      "EN": "Cannot get service data",
+      "TH": "ไม่สามารถเข้าถึงข้อมูล service"
+    }
+  },
+  "10112": {
+    "Code": "ERROR_ADD_BANK_ACCOUNT_HISTORY",
+    "Message": {
+      "EN": "ERROR_ADD_BANK_ACCOUNT_HISTORY",
+      "TH": "ERROR_ADD_BANK_ACCOUNT_HISTORY"
+    }
+  },
+  "10113": {
+    "Code": "ERROR_QR_CODE_IS_EXPIRED",
+    "Message": {
+      "EN": "ERROR_QR_CODE_IS_EXPIRED",
+      "TH": "ERROR_QR_CODE_IS_EXPIRED"
+    }
+  },
+  "10114": {
+    "Code": "ERROR_CREATE_ACTIVITY_LOG_FAILED",
+    "Message": {
+      "EN": "Cannot create activity log",
+      "TH": "ไม่สามารถบันทึกข้อมูลกิจกรรมได้"
+    }
+  },
+  "10115": {
+    "Code": "ERROR_USER_ALREADY_EXIST",
+    "Message": {
+      "EN": "User already exist",
+      "TH": "พบข้อมูลผู้ใช้นี้ในระบบแล้ว"
+    }
+  },
+  "10116": {
+    "Code": "ERROR_SECURITY_GOOGLE_AUTH_ALREADY_ENABLE",
+    "Message": {
+      "EN": "Google Authenticator Already Enable",
+      "TH": "รหัสยืนยันตัวตน Google ถูกเปิดใช้งานแล้ว"
+    }
+  },
+  "10117": {
+    "Code": "ERROR_INVALID_PARAMETER",
+    "Message": {
+      "EN": "Invalid request parameter",
+      "TH": "พารามิเตอร์ที่ร้องขอไม่ถูกต้อง"
+    }
+  },
+  "10118": {
+    "Code": "ERROR_PARSE_PARAMS_TYPE_FAILED",
+    "Message": {
+      "EN": "ERROR_PARSE_PARAMS_TYPE_FAILED",
+      "TH": "ERROR_PARSE_PARAMS_TYPE_FAILED"
+    }
+  },
+  "10119": {
+    "Code": "ERROR_CANNOT_CREATE_SLIP_DEPOSIT",
+    "Message": {
+      "EN": "ERROR_CANNOT_CREATE_SLIP_DEPOSIT",
+      "TH": "ERROR_CANNOT_CREATE_SLIP_DEPOSIT"
+    }
+  },
+  "10120": {
+    "Code": "ERROR_VERIFY_CODE_EXPIRED",
+    "Message": {
+      "EN": "Verify otp code expired",
+      "TH": "รหัสยืนยัน otp หมดอายุ"
+    }
+  },
+  "10121": {
+    "Code": "ERROR_GET_USER_BY_UID_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_USER_BY_UID_FAILED",
+      "TH": "ERROR_GET_USER_BY_UID_FAILED"
+    }
+  },
+  "10122": {
+    "Code": "ERROR_SECURITY_GOOGLE_AUTH_GENERATE_FAILED",
+    "Message": {
+      "EN": "Cannot generate Google Authenticator code",
+      "TH": "ไม่สามารถสร้างรหัสยืนยันตัวตน Google ได้"
+    }
+  },
+  "10123": {
+    "Code": "ERROR_DELETE_API_MANAGEMENT_RESTRICTION_FAILED",
+    "Message": {
+      "EN": "ERROR_DELETE_API_MANAGEMENT_RESTRICTION_FAILED",
+      "TH": "ERROR_DELETE_API_MANAGEMENT_RESTRICTION_FAILED"
+    }
+  },
+  "10124": {
+    "Code": "ERROR_GET_LABEL_API_MANAGEMENT_FAILED",
+    "Message": {
+      "EN": "ERROR_GET_LABEL_API_MANAGEMENT_FAILED",
+      "TH": "ERROR_GET_LABEL_API_MANAGEMENT_FAILED"
+    }
+  }
 }
